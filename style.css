@@ -299,20 +299,23 @@ footer a:hover {
 @media (max-width: 768px) {
 
     nav {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 14px 18px;
     }
 
+    /* ΚΡΥΒΟΥΜΕ ΤΟ ΚΕΝΤΡΙΚΟ CTA ΣΤΟ MOBILE */
     .nav-center {
-        position: static;
-        transform: none;
-        margin: 10px 0;
+        display: none;
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
     }
 
     .hero {
@@ -586,4 +589,5 @@ body.privacy-page::before {
 .consent-box a {
     color: var(--accent);
     text-decoration: underline;
+
 }
