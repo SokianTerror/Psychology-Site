@@ -18,7 +18,7 @@
 }
 
 body {
-    background-image: url("images/fr.jpg");
+    background-image: url("../images/fr.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -173,11 +173,11 @@ main {
 
 /* ================= HERO BACKGROUNDS ================= */
 
-.hero-main { background-image: url("/images/pouli.jpg"); }
-.hero-clouds { background-image: url("/images/clouds.jpg"); }
-.hero-forest { background-image: url("/images/forest-path.jpg"); }
-.hero-animal { background-image: url("/images/calm-animal.jpg"); }
-.hero-sea { background-image: url("/images/calm-sea.jpg"); }
+.hero-main { background-image: url("../images/pouli.jpg"); }
+.hero-clouds { background-image: url("../images/clouds.jpg"); }
+.hero-forest { background-image: url("../images/forest-path.jpg"); }
+.hero-animal { background-image: url("../images/calm-animal.jpg"); }
+.hero-sea { background-image: url("../images/calm-sea.jpg"); }
 
 /* ================= HERO OVERLAYS ================= */
 
@@ -376,7 +376,7 @@ button {
 }
 
 body.contact-page {
-    background-image: url("/images/contact-bg.jpg");
+    background-image: url("../images/contact-bg.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -523,7 +523,7 @@ form button {
 }
 
 body.about-page {
-    background-image: url("/images/about-bg.jpg");
+    background-image: url("../images/about-bg.jpg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
