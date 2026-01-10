@@ -591,3 +591,9 @@ body.privacy-page::before {
     text-decoration: underline;
 
 }
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
