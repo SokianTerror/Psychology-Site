@@ -1,34 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const menu = document.querySelector("nav ul");
+  const links = document.querySelectorAll("nav ul a");
 
   if (hamburger && menu) {
     hamburger.addEventListener("click", () => {
       menu.classList.toggle("open");
+      hamburger.classList.toggle("active");
+    });
+
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        menu.classList.remove("open");
+        hamburger.classList.remove("active");
+      });
     });
   }
 });
-
-(function() {
-    emailjs.init("YwHvTOATlxedlF5iw"); // από EmailJS
-})();
-
-document.getElementById("contact-form")
-    .addEventListener("submit", function(e) {
-        e.preventDefault();
-
-        emailjs.sendForm(
-            "service_s7q4sor",   // π.χ. service_xxx
-            "template_uk0dvpv",  // π.χ. template_xxx
-            this
-        ).then(
-            () => {
-                alert("Το μήνυμα στάλθηκε επιτυχώς.");
-                this.reset();
-            },
-            (error) => {
-                alert("Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά.");
-                console.error(error);
-            }
-        );
-    });
